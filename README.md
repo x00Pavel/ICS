@@ -3,7 +3,6 @@
 ## Festival management application 
 The resulting application is to be used for festival management.
 
-> :warning: BTW, we use [AvaloniUI](https://avaloniaui.net/) in this project 
 
 ## Phase 1 - object design
 It is necessary to implement the object's structure for their subsequent implementation in the database.
