@@ -1,0 +1,38 @@
+﻿<Application x:Class="FestivalApp.App.App"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:viewModels="clr-namespace:FestivalApp.App.ViewModels"
+        xmlns:views1="clr-namespace:FestivalApp.App.Views">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles/MenuButton.xaml" />
+                <ResourceDictionary Source="Styles/GridStyle.xaml" />
+                <ResourceDictionary Source="Styles/InListViewButton.xaml" />
+                <ResourceDictionary Source="Styles/NewButton.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <DataTemplate DataType="{x:Type viewModels:PerformancesViewModel}">
+                <views1:PerformancesView />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModels:PerformanceDetailViewModel}">
+                <views1:PerformanceDetailView />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModels:StagesViewModel}">
+                <views1:StagesView />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModels:StageDetailViewModel}">
+                <views1:StageDetailedView />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModels:BandsViewModel}">
+                <views1:BandsView />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModels:BandDetailViewModel}">
+                <views1:BandDetailedViewModel />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewModels:PerformanceNewViewModel}">
+                <views1:PerformanceNewView />
+            </DataTemplate>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0861CB60-D8A4-45EE-B32A-B648EBA2B9F0}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		azure-pipelines.yml = azure-pipelines.yml
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FestivalApp.BL", "src\FestivalApp.BL\FestivalApp.BL.csproj", "{B6A371BF-3AF4-4CCF-A165-96FE74C72BB2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FestivalApp.BL.Tests", "tests\FestivalApp.BL.Tests\FestivalApp.BL.Tests.csproj", "{5680E418-40A6-4291-8103-8591C09AAC3D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B6A371BF-3AF4-4CCF-A165-96FE74C72BB2} = {B6A371BF-3AF4-4CCF-A165-96FE74C72BB2}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FestivalApp.DAL", "src\FestivalApp.DAL\FestivalApp.DAL.csproj", "{75835A72-A47E-4B28-8D68-3B969B069555}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FestivalApp.DAL.Tests", "tests\FestivalApp.DAL.Tests\FestivalApp.DAL.Tests.csproj", "{451F8BAD-AA9A-4392-AE79-2E4316AC7826}"
+	ProjectSection(ProjectDependencies) = postProject
+		{75835A72-A47E-4B28-8D68-3B969B069555} = {75835A72-A47E-4B28-8D68-3B969B069555}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FestivalApp.App", "src\FestivalApp.App\FestivalApp.App.csproj", "{77592EDA-46C5-4FE6-8532-0F1E16B03165}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6A371BF-3AF4-4CCF-A165-96FE74C72BB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6A371BF-3AF4-4CCF-A165-96FE74C72BB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6A371BF-3AF4-4CCF-A165-96FE74C72BB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6A371BF-3AF4-4CCF-A165-96FE74C72BB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5680E418-40A6-4291-8103-8591C09AAC3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5680E418-40A6-4291-8103-8591C09AAC3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5680E418-40A6-4291-8103-8591C09AAC3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5680E418-40A6-4291-8103-8591C09AAC3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75835A72-A47E-4B28-8D68-3B969B069555}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75835A72-A47E-4B28-8D68-3B969B069555}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75835A72-A47E-4B28-8D68-3B969B069555}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75835A72-A47E-4B28-8D68-3B969B069555}.Release|Any CPU.Build.0 = Release|Any CPU
+		{451F8BAD-AA9A-4392-AE79-2E4316AC7826}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{451F8BAD-AA9A-4392-AE79-2E4316AC7826}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{451F8BAD-AA9A-4392-AE79-2E4316AC7826}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{451F8BAD-AA9A-4392-AE79-2E4316AC7826}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77592EDA-46C5-4FE6-8532-0F1E16B03165}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77592EDA-46C5-4FE6-8532-0F1E16B03165}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77592EDA-46C5-4FE6-8532-0F1E16B03165}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77592EDA-46C5-4FE6-8532-0F1E16B03165}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3FAE3E11-388F-4653-B2E4-5160ADD7F432}
+	EndGlobalSection
+EndGlobal
